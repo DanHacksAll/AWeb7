@@ -1,4 +1,4 @@
 # AWeb7
 Building resources for a decentralized future
 
-![AWeb Logo](/public/aweblogo.png)
+![A7 Logo](/public/aweblogo.png)
