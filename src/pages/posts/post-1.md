@@ -1,6 +1,7 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My first post'
-pubDate: '2025-06-12'
+pubDate: 25/06/2027
 description: 'This is the first post of the Aweb7 team'
 author: 'AlsecCawx01'
 image:
@@ -9,9 +10,6 @@ image:
 tags: ["astro", "blogging", "Aweb7", "JS"]
 
 ---
-# My First Blog Post
-
-Published on: 2022-07-01
 
 Welcome to my _new blog_ about Aweb7! Here, I will share my journey as I build a new website for the team.
 

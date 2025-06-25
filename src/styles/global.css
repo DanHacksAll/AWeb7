@@ -64,10 +64,6 @@ h1 {
   display: unset;
 }
 
-.logo {
-  width: 100%;
-  height: auto;
-}
 
 @media screen and (min-width: 636px) {
   .nav-links {

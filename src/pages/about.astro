@@ -1,7 +1,5 @@
 ---
-import Footer from '../components/footer.astro';
-import Header from '../components/Header.astro';
-import '../styles/global.css';
+import BaseLayout from '../layouts/baseLayout.astro';
 
 const pageTitle = "About Aweb7"
 
@@ -23,31 +21,7 @@ const fontWeight = "bold"
 const textCase = "uppercase"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/aweb.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
-    <style define:vars={{skillColor, fontWeight, textCase}}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-
-      .skills{
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-      }
-
-
-    </style>
-  </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
+    <BaseLayout pageTitle={pageTitle}>
     <h2>Aweb7xCAW</h2>
     <p>WE BELIEVE IN DECENTRALIZATION</p>
 
@@ -69,9 +43,23 @@ const textCase = "uppercase"
     {happy && <p>I am happy to be learning</p>}
     {finished && <p>I finished this tutorial</p>}
     {goal === 3 ? <p>My goal is to finish in 3 days</p> : <p>My goal is not 3 days</p>}
-    <Footer/>
     <script>
       import "../scripts/menu.js"
     </script>
-  </body>
-</html>
+    </BaseLayout>
+
+
+    <style define:vars={{skillColor, fontWeight, textCase}}>
+       {
+        color: purple;
+        font-size: 4rem;
+      }
+
+      .skills{
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+      }
+
+
+    </style>

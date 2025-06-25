@@ -1,27 +1,17 @@
 ---
-import Footer from '../components/footer.astro';
-import Header from '../components/Header.astro';
-import '../styles/global.css';
-
+import BaseLayout from "../layouts/baseLayout.astro"
 
 const pageTitle = "Aweb7"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/aweb.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
-    <img src="/aweblogo.png" class="logo" alt="Logo AWeb7">
-    <Footer />
-    <script>
-      import "../scripts/menu.js"
-    </script>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+  <img src="/aweblogo.png" class="awebLogo" alt="aweb7 logo">
+</BaseLayout>
+
+<style>
+  .awebLogo{
+    width: 100%;
+    height: auto;
+  }
+</style>
