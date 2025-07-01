@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My second post'
-pubDate: 24/07/2025
+pubDate: 2025-07-24
 description: 'This is the second post of the Aweb7 team'
 author: 'AlsecCawx01'
 image:
